@@ -1,0 +1,557 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?3k1wol");
+  src: url("fonts/icomoon.eot?3k1wol#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?3k1wol") format("truetype"), url("fonts/icomoon.woff?3k1wol") format("woff"), url("fonts/icomoon.svg?3k1wol#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-audiovisual:before {
+  content: "\e900";
+}
+
+.icon-claquete:before {
+  content: "\e901";
+}
+
+.icon-facebook:before {
+  content: "\e902";
+}
+
+.icon-filmagem:before {
+  content: "\e903";
+}
+
+.icon-fotografia:before {
+  content: "\e904";
+}
+
+.icon-img:before {
+  content: "\e905";
+}
+
+.icon-instagram:before {
+  content: "\e906";
+}
+
+.icon-twitter:before {
+  content: "\e907";
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 20px 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #333;
+  text-transform: none;
+}
+
+.container-site {
+  display: grid;
+  grid-template-areas: "aside main" "aside contato";
+  grid-template-columns: 320px 1fr;
+  grid-template-rows: 1fr auto;
+  grid-gap: 0px;
+  height: 100vh;
+}
+
+.active {
+  border-right: 3px solid #ffd500;
+  background: #000f2b;
+  color: #fff;
+}
+
+.aside {
+  grid-area: aside;
+  display: grid;
+  grid-template-areas: "headeraside" "nav" "sociallinks";
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  background: #00132d;
+  height: 100vh;
+  width: 320px;
+  position: fixed;
+}
+
+.aside .header-aside {
+  grid-area: headeraside;
+  padding: 20px;
+  display: grid;
+  grid-template-areas: "desc perfil";
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 20px;
+}
+
+.aside .header-aside .desc {
+  grid-area: desc;
+  text-align: right;
+  align-self: center;
+}
+
+.aside .header-aside .img-perfil {
+  grid-area: perfil;
+  float: left;
+  align-self: center;
+}
+
+.aside .header-aside .img-perfil img {
+  width: 100px;
+}
+
+.aside .header-aside h3 {
+  color: #fff;
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 2;
+}
+
+.aside .header-aside h5 {
+  margin: 10px 0;
+  font-weight: 300;
+  font-size: .8rem;
+  color: #ffd500;
+}
+
+.aside .nav {
+  grid-area: nav;
+  margin: 20px 0;
+}
+
+.aside .nav ul {
+  background: #00132d;
+  padding: 0;
+  width: 100%;
+}
+
+.aside .nav ul li {
+  background: #888;
+}
+
+.aside .nav ul li a {
+  background: #00132d;
+  border-right: 3px solid #00132d;
+  text-align: center;
+  color: #ffd500;
+  padding: 15px;
+  display: inline-block;
+  width: 100%;
+  min-height: 40px;
+  font-weight: 200;
+  transition: all .2s ease-in;
+}
+
+.aside .nav ul li a:hover {
+  border-right: 3px solid #00173e;
+  background: #00173e;
+  color: #fff;
+  text-decoration: none;
+}
+
+.aside .social-links {
+  align-self: end;
+  grid-area: sociallinks;
+  margin: 0 20px 40px;
+  display: grid;
+  grid-template-areas: "sl1" "sl2" "sl3";
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.aside .social-links a {
+  color: #ffd500;
+  font-size: 1.5em;
+  text-align: center;
+  transition: all .2s ease-in;
+}
+
+.aside .social-links a sl1 {
+  grid-area: sl1;
+}
+
+.aside .social-links a sl2 {
+  grid-area: sl2;
+}
+
+.aside .social-links a sl3 {
+  grid-area: sl3;
+}
+
+.aside .social-links a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main {
+  grid-area: main;
+  background: #ccc;
+}
+
+.main .sobre, .main .servicos, .main .portfolio {
+  height: 100vh;
+}
+
+.main .sobre, .main .servicos, .main .portfolio, .main .contato {
+  padding: 20px;
+  display: grid;
+}
+
+.main .sobre h3, .main .servicos h3, .main .portfolio h3, .main .contato h3 {
+  position: relative;
+}
+
+.main .sobre h3::after, .main .servicos h3::after, .main .portfolio h3::after, .main .contato h3::after {
+  content: '';
+  position: absolute;
+  top: 35px;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  background: #00132d;
+}
+
+.main .sobre {
+  grid-template-areas: "logo" "titulo1sobre" "descsobre";
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 4fr;
+  grid-gap: 20px;
+  background: url(../img/capa-fb-site.jpg) no-repeat center;
+  background-size: cover;
+  color: #fff;
+}
+
+.main .sobre .logo {
+  grid-area: logo;
+}
+
+.main .sobre .logo img {
+  width: 100%;
+}
+
+.main .sobre .titulo1 {
+  grid-area: titulo1sobre;
+}
+
+.main .sobre .titulo1 h1 {
+  font-weight: 400;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.main .sobre .desc-sobre {
+  grid-area: descsobre;
+  align-self: center;
+  font-size: 28px;
+  text-align: center;
+  line-height: 2em;
+  font-weight: 100;
+}
+
+.main .servicos {
+  width: 100%;
+  background: #f2f2f2;
+  display: grid;
+  grid-template-areas: "titulo2" "servs" "servsDesc";
+  grid-template-rows: 1fr 5fr 4fr;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+.main .servicos h3 {
+  grid-area: titulo2;
+}
+
+.main .servicos .servs {
+  grid-area: servs;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.main .servicos .servs .serv {
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.main .servicos .servs .serv:not(:first-child):not(:last-child) {
+  margin: 0 20px 0 0;
+}
+
+.main .servicos .servs .serv .serv-img {
+  height: 200px;
+  width: 100%;
+}
+
+.main .servicos .servs .serv .serv-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  margin: 0;
+}
+
+.main .servicos .servs .serv .serv-titulo {
+  text-align: center;
+  color: #00132d;
+  font-size: 1em;
+  width: 100%;
+  height: 40px;
+  padding-top: 20px;
+}
+
+.main .servicos .servs .serv .serv-titulo h5 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.main .servicos .servs-desc {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 20px;
+  grid-area: servsDesc;
+  display: grid;
+  grid-template-areas: "servsDesc1 servsDesc2";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 20px;
+}
+
+.main .servicos .servs-desc .servs-desc1 {
+  grid-area: servsDesc1;
+}
+
+.main .servicos .servs-desc .servs-desc2 {
+  grid-area: servsDesc2;
+}
+
+.main .portfolio {
+  background: #fff;
+  display: grid;
+  grid-template-areas: "titulo3" "portImgs" "portVideos";
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 3fr 6fr;
+}
+
+.main .portfolio h3 {
+  grid-area: titulo3;
+}
+
+.main .portfolio .port-imgs {
+  grid-area: portImgs;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.main .portfolio .port-imgs .port-img {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.main .portfolio .port-imgs .port-img:not(:last-child) {
+  margin-right: 20px;
+}
+
+.main .portfolio .port-imgs .port-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  margin: 0;
+}
+
+.main .portfolio .port-imgs .port-img1 {
+  grid-area: portImg1;
+}
+
+.main .portfolio .port-imgs .port-img2 {
+  grid-area: portImg2;
+}
+
+.main .portfolio .port-imgs .port-img3 {
+  grid-area: portImg3;
+}
+
+.main .portfolio .port-imgs .port-img4 {
+  grid-area: portImg4;
+}
+
+.main .portfolio .port-videos {
+  margin-top: 20px;
+  grid-area: portVideos;
+  display: grid;
+  grid-template-areas: "portVideo1 portVideo2";
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 20px;
+}
+
+.main .portfolio .port-videos .port-video1 {
+  grid-area: portVideo1;
+}
+
+.main .portfolio .port-videos .port-video2 {
+  grid-area: portVideo2;
+}
+
+.contato {
+  background: #00132d;
+  grid-area: contato;
+  height: auto;
+  width: 100%;
+  padding: 20px;
+  padding-bottom: 30px;
+}
+
+.contato h3 {
+  position: relative;
+  color: #ffd500;
+}
+
+.contato h3::after {
+  content: '';
+  position: absolute;
+  top: 35px;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  background: #ffd500;
+}
+
+.contato .desc-contato {
+  color: #fff;
+  text-align: left;
+  font-size: 20px;
+  margin: 20px 50% 20px 0;
+}
+
+.contato a {
+  color: #ffd500;
+  font-weight: 200;
+  display: block;
+  margin-bottom: -10px;
+  width: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .container-site {
+    display: grid;
+    grid-template-areas: "navRes" "main" "contato";
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 3fr 3fr;
+  }
+  .container-site .nav-resp {
+    position: fixed;
+    height: 40px;
+    grid-area: navRes;
+    z-index: 999;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #00132d;
+  }
+  .container-site .nav-resp ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 40px;
+    background: #00132d;
+  }
+  .container-site .nav-resp ul li {
+    list-style: none;
+  }
+  .container-site .nav-resp ul li a {
+    display: inline-block;
+    padding-top: 10px;
+    height: 40px;
+    width: 100%;
+    color: #fff;
+    background: #00132d;
+  }
+  .container-site .nav-resp ul li a:hover::before {
+    border-bottom: 3px solid transparent;
+  }
+  .aside {
+    display: none;
+  }
+  .servicos .servs {
+    grid-area: servs;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "servsCarousel servsCarousel";
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr;
+  }
+  .servicos .servs .servsCarousel {
+    grid-area: servsCarousel;
+    display: block;
+    width: 100%;
+  }
+  .servicos .servs .serv {
+    display: none;
+  }
+  .active {
+    border-right: 0;
+    border-bottom: 3px solid #ffd500;
+    background: #000f2b;
+    color: #fff;
+  }
+  .main .sobre, .main .servicos, .main .portfolio, .main .contato {
+    padding-top: 60px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .servs .servsCarousel {
+    display: none;
+  }
+  .servs .serv {
+    display: block;
+    grid-area: servs;
+    display: grid;
+    width: 100%;
+    grid-template-areas: "serv1 serv2 serv3 serv4";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+  }
+}
+ 
+
+ /*# sourceMappingURL= style.css.map */

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="30"
+   height="30"
+   viewBox="0 0 7.9375206 7.9375002"
+   version="1.1"
+   id="svg5512"
+   sodipodi:docname="icon-facebook.svg"
+   inkscape:version="0.92.1 r15371">
+  <defs
+     id="defs5506">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4203-2">
+      <path
+         sodipodi:nodetypes="ssszsss"
+         inkscape:connector-curvature="0"
+         id="path4206-8"
+         d="m 893.17144,-120.45883 c 28.51918,-7.64169 54.75537,9.98013 61.14173,38.7918 l 8.59271,38.765443 c 5.94264,26.809702 -8.03488,50.7146722 -33.53338,57.546973 -25.49849,6.8323 -49.55586,-6.8812524 -57.81424,-33.07045 l -11.94122,-37.868215 c -8.87508,-28.144823 5.0352,-56.523861 33.5544,-64.165551 z"
+         style="opacity:1;fill:#f0c5b5;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.16499999;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="-3.2642374"
+     inkscape:cy="18.502243"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5509">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-289.06206)">
+    <g
+       id="g5123-6"
+       transform="matrix(0.61608048,0,0,0.61608048,-67.919837,300.33724)"
+       style="fill:#00132d;fill-opacity:1;stroke-width:1.62316442">
+      <g
+         style="fill:#00132d;fill-opacity:1;stroke-width:1.62316442"
+         transform="matrix(0.26458333,0,0,0.26458333,106.72652,-21.285318)"
+         id="g5003-8">
+        <path
+           inkscape:connector-curvature="0"
+           id="f_2_-9-4"
+           style="fill:#00132d;fill-opacity:1;stroke-width:1.62316442"
+           d="M 42,56 V 38 h 5.358 l 0.934,-8 H 42 v -4.457 c 0,-2.097 -0.131,-3.527 2.877,-3.527 L 48,22.014 V 15.535 C 47,15.447 45.513,15.25 42.864,15.25 37.333,15.25 34,18.626 34,24.826 V 30 h -7 v 8 h 7 v 18 z" />
+      </g>
+    </g>
+  </g>
+</svg>
